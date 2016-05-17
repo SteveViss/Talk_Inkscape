@@ -62,7 +62,7 @@
     .red { color: #fa0000; }
     .large { font-size: 2em; }
     a, a > code {
-      color: #ffe34f;
+      color: #cfae00;
       text-decoration: none;
     }
     .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
@@ -84,6 +84,17 @@
     }
     .pull-right ~ p {
       clear: both;
+    }
+    code {
+      background: #e7e8e2;
+      border-radius: 5px;
+    }
+    
+    .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    .remark-code-line-highlighted     { background-color: #373832; }
+    .pull-left {
+      float: left;
+      width: 47%;
     }
     </style>
   </head>
@@ -282,22 +293,20 @@
       
       --
       .pull-left[
-      .center[**RGB**]
-
       - Additive color model (Red + Green + Blue = White)
       - Visible spectrum
       - <span style='color:red;'>For computer display</span>
       - Use light to display color
       - Color result from transmitted light
+      - ex. rgb(38, 157, 47); from 0 to 255
       ]
       --
       .pull-right[
-      .center[**CMYK**]
-
-      - Substractive color (Red + Green + Blue = White)
+      - Substractive color (Cyan + Magenta + Yellow + Black)
       - <span style='color:red;'>For printed materials</span>
       - Use ink to display color
       - Color result from reflected light
+      - ex. cmyk(0.758, 0, 0.701, 0.384); from 0 to 1
       ]
 
 
@@ -310,11 +319,42 @@
       
       ## Printed or screen diplayed?
       
-      You have to **use the right model** of color and make sure your **screen is calibrated** to prevent this to happened.
+      You have to **use the right model** of color and make sure your **screen is calibrated** to prevent this to happen on your poster, one day before your congress...
+      
+      --
+      
+      .pull-left[
+      <img src="./assets/img/darth_red.jpg" width=250 alt="" /></img>
+      ]
+      
+      .pull-right[
+      <img src="./assets/img/darth_pink.jpg" width=250 alt="" /></img>
+      ]
       
       
+      ???
       
+      <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->      
       
+      ---
+      layout: false
+      
+      ## Hex code for the web and R
+      
+      - Hex = three-byte hexadecimal number used in HTML, CSS, SVG
+      - Notation: #RRGGBB
+      - Each digit ranging from 0 to F (two digits = 256 possibilities)
+      
+      See [http://www.color-hex.com/color/ff0000]([http://www.color-hex.com/color/ff0000]) for RGB to HEX conversion 
+      
+      --
+      
+      **Exemple in R**
+      
+      ```r
+      plot(x,y, pch=19, col='#ff0000')
+      ```
+
       ???
 
       <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
@@ -402,5 +442,6 @@
     <script>
       var slideshow = remark.create();
     </script>
+    
   </body>
 </html>
