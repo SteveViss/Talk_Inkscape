@@ -32,6 +32,7 @@
     font-family: 'Kalam';
     font-weight: bold;
     color: #3c3c3c;
+    margin-bottom: 50px;
   }
   
   h3 {
@@ -221,12 +222,11 @@
     
     - Lines of computer instruction (code).
     - Instead of using pixels to describe the image, vectorial drawing use shapes: 
-    - Circles
-    - Lines
-    - Curves
+      - Circles
+      - Lines
+      - Curves
     - The colors are included in the shapes
     - The quality remains the same regardless of the dimensions of the drawing
-    
     
     ???
     mes notes
@@ -297,6 +297,11 @@
     ## Chapter 2.
     # Colorimetry
     
+    ???
+    1. Ils éxistent plusieurs facon de représenter les couleurs.
+    2. Je vais vour présenter deux d'entre-elles: RGB et CMYK
+    3. Cette distinction est necessaire car la manière de représenté de la couleur à l'écran est différent de la couleur imprimé sur sur poster
+    
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->      
     
     ---
@@ -324,8 +329,6 @@
     - ex. cmyk(0.758, 0, 0.701, 0.384); from 0 to 1
     ]
     
-    
-    ???
     
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->      
     
@@ -371,11 +374,13 @@
     
     --
     
-    - Hex = three-byte hexadecimal number used in HTML, CSS, SVG
-    - Notation: #RRGGBB
-    - Each digit ranging from 0 to F (two digits = 256 possibilities)
+    - **Hex** = hexadecimal number used in HTML, CSS, SVG
+    - Each digit ranging from 0 to F (16 possibilities)
+    - Notation: `#RRGGBB`
+    - `RR` = two digits = `\(16^2\)` = 256 nuances of one color
     
     See [http://www.color-hex.com/color/ff0000]([http://www.color-hex.com/color/ff0000]) for RGB to HEX conversion 
+  
     
     ???
     
@@ -610,8 +615,23 @@
   </textarea>
   <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
   </script>
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML&delayStartupUntil=configured" type="text/javascript"></script>
+
   <script>
   var slideshow = remark.create();
+  // Setup MathJax
+  MathJax.Hub.Config({
+      tex2jax: {
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+  });
+  MathJax.Hub.Queue(function() {
+      $(MathJax.Hub.getAllJax()).map(function(index, elem) {
+          return(elem.SourceElement());
+      }).parent().addClass('has-jax');
+  });
+
+  MathJax.Hub.Configured();
   </script>
   
 </body>
