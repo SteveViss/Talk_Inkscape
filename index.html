@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  
+
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-  
+
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <style>
@@ -17,30 +17,30 @@
   @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
   @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400italic,300,300italic,500,500italic,700,700italic);
   @import url(https://fonts.googleapis.com/css?family=Kalam:400,300);
-  
+
   body {
     font-family: 'Ubuntu';
     font-weight: lighter;
   }
-  
+
   h1 {
     font-family: 'Ubuntu';
     font-weight: medium;
   }
-  
+
   h2 {
     font-family: 'Kalam';
     font-weight: bold;
     color: #3c3c3c;
     margin-bottom: 50px;
   }
-  
+
   h3 {
     font-family: 'Ubuntu';
     font-weight: 400;
     font-style: italic;
   }
-  
+
   .inverse {
     background: #007499;
     color: #ffffff;
@@ -75,7 +75,7 @@
     text-decoration: none;
   }
   .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
-  
+
   .vertical-align {
     display: flex;
     align-items: center;
@@ -98,7 +98,7 @@
     background: #e7e8e2;
     border-radius: 5px;
   }
-  
+
   .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
   .remark-code-line-highlighted     { background-color: #373832; }
   .pull-left {
@@ -109,27 +109,27 @@
 </head>
 <body>
   <textarea id="source">
-    
+
     name: inverse
     layout: true
     class: center,middle, inverse
     ---
-    
+
     ##### QCBS - Visual communication workshop 2016
-    
-    <h1>Vectorial creation with <span style="font-family:'Kalam';color:#ffe34f;">Inkscape</span></h1> 
-    
+
+    <h1>Vectorial creation with <span style="font-family:'Kalam';color:#ffe34f;">Inkscape</span></h1>
+
     By Steve Vissault and Michaël Belluau
-    
+
     <img src="./assets/img/Inkscape.png" width="200px"> </img>
-    
+
     .footnote[Slides availables at [https://SteveViss.github.io/Talk_Inkscape/](https://SteveViss.github.io/Talk_Inkscape/)]
-    
+
     ???
     NOTE
-    
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-    
+
     ---
     name: inverse
     layout: true
@@ -137,180 +137,180 @@
     ---
     ## Chapter 1.
     # Bitmap vs vectorial
-    
-    
+
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     ---
     layout: false
     class:
-    
+
     ## Bitmap vs vectorial
-    
+
     **Two ways of represented an image:**
     1. Bitmap, which can be seen as "raster"
     2. Vector
-    
+
     A bitmap is filled by pixels or dots
-    
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     ---
     layout: false
-    class: 
-    
+    class:
+
     ## Bitmap vs vectorial
-    
+
     <img src="./assets/img/bitVsVec.png" width="500px"> </img>
-    
+
     ???
     mes notes
-    
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     ---
     layout: false
-    class: 
-    
+    class:
+
     ## Bitmap vs vectorial
-    
+
     **Bitmap pictures: Photographs, digital, videos**
-    
+
     - Number of dots (or pixels) defines through the height and width (160 x 120, 800 x 600, 1400 x 1050)
-    - Or as dpi (dots per inches), ppi (pixels per inches) 
+    - Or as dpi (dots per inches), ppi (pixels per inches)
     - Points are stretched or squashed when the size of the image changes
     - the number of points remains the same
-    
+
     ???
     On utilise DPI or PPI quand la taille de l'image est déterminé en pouce, centimètre etc.
-    
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     ---
     layout: false
-    class: 
-    
+    class:
+
     ## Bitmap vs vectorial
-    
+
     <img src="./assets/img/bitVsVec2.png" width="650px"> </img>
-    
+
     ???
     mes notes
-    
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     ---
     layout: false
-    class: 
-    
+    class:
+
     ## Bitmap vs vectorial
-    
+
     In Bitmap, each pixel has a specified color and detailed images are those with greater pixels.
-    
+
     - Web = 72 dpi or ppi
     - color image >= 300 dpi or ppi
     - grayscale image >= 150 dpi or ppi
-    
+
     **Some Bitmap programs:**
     - Photoshop (Expensive)
     - Paint Shop Pro (Expensive)
     - GIMP (FREE)
     - Photo-Paint (Expensive)
-    - Graphic Converter 
-    
+    - Graphic Converter
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     ---
     layout: false
-    class: 
-    
+    class:
+
     ## What's a vectorial image?
-    
+
     - Lines of computer instruction (code).
-    - Instead of using pixels to describe the image, vectorial drawing use shapes: 
+    - Instead of using pixels to describe the image, vectorial drawing use shapes:
       - Circles
       - Lines
       - Curves
     - The colors are included in the shapes
     - The quality remains the same regardless of the dimensions of the drawing
-    
+
     ???
     mes notes
-    
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     ---
     layout: false
-    class: 
-    
+    class:
+
     ## What's a vectorial image?
-    
+
     <img src="./assets/img/bitVsVec3.png" width="650px"> </img>
-    
+
     ???
     mes notes
-    
-    
+
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     ---
     layout: false
-    class: 
-    
+    class:
+
     ## Few examples
-    
+
     <img src="./assets/img/vecExamples.png" width="650px"> </img>
-    
+
     ???
     mes notes
-    
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     ---
     layout: false
-    class: 
-    
+    class:
+
     ## Application in science
-    
+
     <img src="./assets/img/vecExamplesScience.png" width="500px"> </img>
-    
+
     ???
     mes notes
-    
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     ---
     layout: false
-    class: 
-    
+    class:
+
     ## Brief summary..
-    
+
     **Use vectorial image means**..
-    
+
     - Easily editable
     - Easy to handle
     - Rotation, color change, size, etc.
     - Uses less space than the bitmap
-    
+
     **But**..
-    
+
     - Uses a specific format, "svg"
     - Must be created / edited with specific software
-    
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-    
+
     ---
     layout: true
     class: center,middle , inverse
     ---
-    
+
     ## Chapter 2.
     # Colorimetry
-    
+
     ???
     1. Ils éxistent plusieurs facon de représenter les couleurs.
     2. Je vais vour présenter deux d'entre-elles: RGB et CMYK
     3. Cette distinction est necessaire car la manière de représenté de la couleur à l'écran est différent de la couleur imprimé sur sur poster
-    
-    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->      
-    
+
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
     ---
     layout: false
-    
+
     ## Printed or screen displayed?
-    
+
     .center[<img src="./assets/img/RGBvsCMYK.png" width="400px", style="margin:0px;padding:0px;"> </img>]
-    
+
     --
     .pull-left[
     - Additive color model (Red + Green + Blue = White)
@@ -328,118 +328,118 @@
     - Color result from reflected light
     - ```cmyk(0.758, 0, 0.701, 0.384)```; from 0 to 1
     ]
-    
-    
-    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->      
-    
+
+
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
     ---
     layout: false
-    
+
     ## Printed image:
-    
+
     You have to...
-    
+
     --
-    
+
     - **use the right model (CMYK or RGB)** of colors
-    - make sure your **screen is calibrated** 
-    
+    - make sure your **screen is calibrated**
+
     --
-    
+
     ... to prevent this from happening on your poster, one day before your congress...
-    
+
     .pull-left[
     <img src="./assets/img/darth_red.jpg" width=250 alt="" /></img>
     ]
-    
+
     .pull-right[
     <img src="./assets/img/darth_pink.jpg" width=250 alt="" /></img>
     ]
-    
-    
+
+
     ???
-    
-    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->      
-    
+
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
     ---
     layout: false
-    
+
     ## Hex code for the web and R
-    
+
     **Exemple in R**
-    
+
     ```r
     plot(x,y, pch=19, col='#ff0000')
     ```
-    
+
     --
-    
+
     - **Hex** = hexadecimal number used in HTML, CSS, SVG
     - Each digit ranging from 0 to F (16 possibilities)
     - Notation: `#RRGGBB`
     - `RR` = two digits = `\(16^2\)` = 256 nuances of one color
-    
-    See [http://www.color-hex.com/color/ff0000]([http://www.color-hex.com/color/ff0000]) for RGB to HEX conversion 
-  
-    
+
+    See [http://www.color-hex.com/color/ff0000]([http://www.color-hex.com/color/ff0000]) for RGB to HEX conversion
+
+
     ???
-    
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-    
+
     ---
     name: inverse
     layout: true
     class: center,middle , inverse
     ---
-    
+
     ## Chapter 3.
     # Exports
-    
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     ---
     layout: false
-    
+
     ## Bitmap and vector exports
-    
+
     **Existing bitmap (or flatten vector) formats:**
-    
-    - jpg or jpeg (Joint Photographic Experts Group) 
+
+    - jpg or jpeg (Joint Photographic Experts Group)
     - gif (Graphics Interchange Format)
     - png (Portable Network Graphics)
     - tiff (Tagged Image File Format)
     - pdf (Portable Document Format)
-    
+
     --
-    
+
     **Existing specific vector formats**: .svg, .eps, .pdf
-    
+
     --
-    
+
     For **bitmap or flatten vector**, the format determines:
-    
+
     - Color depth (bbp)
     - Compression type
     - Transparency (PNG and GIF)
     - vectors or layers preserved and editable (PDF or native format .svg)
     - File size
-    
-    --
-    
-    **The format choice is a trade off among quality and file size (image definitions)**
-    
 
-    
-    
+    --
+
+    **The format choice is a trade off among quality and file size (image definitions)**
+
+
+
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-    
+
     ---
     layout: false
-    
+
     ## Exports
-    
+
     <div class="panel panel-default">
       <!-- Default panel contents -->
-      
+
       <!-- Table -->
       <table class="table">
         <tr>
@@ -474,169 +474,160 @@
         </tr>
         </table>
     </div>
-    
+
     [Source](http://www.scantips.com/basics09.html)
-    
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
     ---
     name: inverse
     layout: true
     class: center,middle , inverse
     ---
-    
+
     ## Chapter 4.
     # Inkscape 101
-  
 
-    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->      
-    
+
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
     ---
     layout: false
-    class: center, 
-    
+    class: center,
+
     ## Interface
     **Four sections:** Menus and functions, drawing tools, magnetism, color choice and status bar
-    
+
     <img src="./assets/img/Interface.png" width="775px", style="margin:0px;padding:0px;"> </img>
-    
+
     ???
-    
-    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->   
-    
+
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
     ---
     layout: false
-    class: 
-    
+    class:
+
     ## Menus and functions
-    
+
     <img src="./assets/img/Menu.png" width="775px", style="margin:0px;padding:0px;"> </img>
-    
+
     ???
-    
-    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->   
-    
+
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
     ---
     layout: false
-    class: 
-    
+    class:
+
     ## Drawing tools
-    
+
     <img src="./assets/img/Tools.png" width="775px", style="margin:0px;padding:0px;"> </img>
-    
+
     ???
-    
-    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->      
-    
+
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
     ---
     layout: false
-    class: 
-    
+    class:
+
     ## Magnetism
-    
+
     **Used to make objects and path "sticky"**
-    - Objects and paths are attracted to each other (corners, environment, etc.) 
+    - Objects and paths are attracted to each other (corners, environment, etc.)
     - Can be enabled or disabled
-    
-    
+
+
     <img src="./assets/img/Mag.png" width="500px", style="margin:0px;padding:0px;"> </img>
-    
+
     ???
-    
-    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->      
-    
+
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
     ---
     layout: false
-    class: 
-    
-    ## Palette and status bar 
-    
+    class:
+
+    ## Palette and status bar
+
     <img src="./assets/img/pal.png" width="775px", style="margin:0px;padding:0px;"> </img>
-    
+
     ???
-    
-    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->      
-    
+
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
     ---
     layout: false
-    class: 
-    
+    class:
+
     ## Before we start..
-    
+
     Differences in paths and objects...
-    
+
     --
-    
+
     .pull-left[
-    
+
     **Objects**
-    
+
     <img src="./assets/img/objects.png" width=375 alt="" /></img>
     ]
-    
+
     --
-    
+
     .pull-right[
-    
+
     **Paths**
-    
+
     <img src="./assets/img/Paths.png" width=375 alt="" /></img>
     ]
-    
+
     ???
-    
-    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->      
-    
+
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
     ---
     layout: false
-    class: 
-    
+    class:
+
     ## Before we start..
-    
+
     **Object manager:** Fill and stroke
-    
+
     .center[
     <img src="./assets/img/objects_mag.png" width=600 alt=""/></img>
     ]
-    
-    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->      
-    
+
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
     ---
     layout: false
-    class: 
-    
+    class:
+
     ## Before we start..
-    
+
     **Object manager:** Align and distribute
-    
+
     .center[
     <img src="./assets/img/objects_mag2.png" width=350 alt=""/></img>
     ]
-    
+
     <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
-    
+
     ---
     name: inverse
     layout: true
     class: center,middle , inverse
     ---
-    
+
     ## Chapter 5.
     # Time to practice...
-    
-    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->      
-    
-    ---
-    layout: false
-    class: middle
-    
-    ## Material
-    
-    Inkscape file available at this address: 
-      
-    
-    
-    
-    
+
+    <!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->            
+
+
+
+
   </textarea>
   <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
   </script>
@@ -658,6 +649,6 @@
 
   MathJax.Hub.Configured();
   </script>
-  
+
 </body>
 </html>
